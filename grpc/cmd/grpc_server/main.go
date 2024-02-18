@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"net"
 
-	"github.com/AndreiMartynenko/auth/pkg/auth_v1"
+	"github.com/AndreiMartynenko/auth/grpc/pkg/auth_v1"
 	"github.com/brianvoe/gofakeit"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"

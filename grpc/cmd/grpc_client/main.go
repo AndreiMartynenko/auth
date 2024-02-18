@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/AndreiMartynenko/auth/pkg/auth_v1"
+	"github.com/AndreiMartynenko/auth/grpc/pkg/auth_v1"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
