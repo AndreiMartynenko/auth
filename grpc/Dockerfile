@@ -6,7 +6,7 @@ COPY . /github.com/AndreiMartynenko/auth/grpc/source/
 WORKDIR /github.com/AndreiMartynenko/auth/grpc/source/
 
 RUN go mod download
-RUN go build -o ./bin/crud_server cmd/grpc_server/main.go
+RUN go build -o ./grpc/bin/crud_server cmd/grpc_server/main.go
 
 # 2 step
 FROM alpine:latest
