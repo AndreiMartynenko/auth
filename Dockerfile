@@ -2,8 +2,8 @@
 FROM golang:1.20.3-alpine AS builder
 
 # . means current repo
-COPY . /github.com/AndreiMartynenko/auth/grpc/source/
-WORKDIR /github.com/AndreiMartynenko/auth/grpc/source/
+COPY . /github.com/AndreiMartynenko/auth/source/
+WORKDIR /github.com/AndreiMartynenko/auth/source/
 
 RUN go mod download
 RUN go build -o ./bin/crud_server cmd/grpc_server/main.go
