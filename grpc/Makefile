@@ -27,14 +27,14 @@ generate-auth-api:
 	api/auth_v1/auth.proto
 
 build:
-	GOOS=linux GOARCH=amd64 go build -o service_linux grpc/cmd/grpc_server/main.go
+	GOOS=linux GOARCH=amd64 go build -o service_linux cmd/grpc_server/main.go
 
 copy-to-server:
 	scp service_linux root@91.236.198.27:
 
 docker-build-and-push:
 	docker buildx build --no-cache --platform linux/amd64 -t cr.selcloud.ru/andy/test-server:v0.0.1 . 
-	docker login -u token -p CRgAAAAAslUsW4DU1X1dJcc7tbZJSpluzoebaD20 cr.selcloud.ru/andy
+	docker login -u token -p CRgAAAAAvGuTLkPqxHoCh-Upd6W4wG69EvvMjW6Y cr.selcloud.ru/andy
 	docker push cr.selcloud.ru/andy/test-server:v0.0.1
 
 # docker-build-and-push:
