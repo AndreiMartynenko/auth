@@ -50,8 +50,9 @@ func (srv *server) Get(ctx context.Context, req *auth_v1.GetUserRequest) (*auth_
 	log.Printf("User id %d", req.GetId())
 
 	return &auth_v1.GetUserResponse{
-		Id:        req.GetId(),
-		Name:      gofakeit.Name(),
+		Id: req.GetId(),
+		// Name:      gofakeit.Name(),
+		Name:      "NEW NAME",
 		Email:     gofakeit.Email(),
 		Role:      auth_v1.UserRole_USER,
 		CreatedAt: timestamppb.New(gofakeit.Date()),
