@@ -34,7 +34,7 @@ copy-to-server:
 
 docker-build-and-push:
 	docker buildx build --no-cache --platform linux/amd64 -t cr.selcloud.ru/andy/test-server:v0.0.1 . 
-	docker login -u token -p CRgAAAAAoQE7iwALBafCWa6tUmvJiqqLwWk4Z6PY cr.selcloud.ru/andy
+	docker login -u token -p CRgAAAAA2cgk5M573ceUNmqyowpt2lSqMm9JaUrW cr.selcloud.ru/andy
 	docker push cr.selcloud.ru/andy/test-server:v0.0.1
 
 # docker-build-and-push:
