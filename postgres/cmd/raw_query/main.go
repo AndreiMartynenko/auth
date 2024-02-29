@@ -1,5 +1,6 @@
 package main
 
+/*
 import (
 	"context"
 	"database/sql"
@@ -53,3 +54,5 @@ func main() {
 		log.Printf("id: %d, title: %s, body: %s, created_at: %v, updated_at: %v\n", id, title, body, createdAt, updatedAt)
 	}
 }
+
+*/

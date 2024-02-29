@@ -31,13 +31,15 @@ services:
       # the PostgreSQL container is persisted even if the container is stopped or removed.
     volumes:
       - postgres_volume:/var/lib/postgresql/data
-  migrator:
-    build:
-      context: .
-      dockerfile: migration.Dockerfile
-    restart: on-failure
-    environment:
-      DB_HOST: pg
+ 
+  # migrations
+  # migrator:
+  #   build:
+  #     context: .
+  #     dockerfile: migration.Dockerfile
+  #   restart: on-failure
+  #   environment:
+  #     DB_HOST: pg
 
 # auth
 
