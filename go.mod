@@ -3,9 +3,10 @@ module github.com/AndreiMartynenko/auth
 go 1.22.0
 
 require (
+	github.com/AndreiMartynenko/common v0.0.0-20240710181035-fb7a0af7b134
 	github.com/Masterminds/squirrel v1.5.4
 	github.com/envoyproxy/protoc-gen-validate v1.0.4
-	github.com/gojuno/minimock/v3 v3.3.12
+	github.com/gojuno/minimock/v3 v3.3.13
 	github.com/golang-jwt/jwt/v5 v5.2.1
 	github.com/golang/protobuf v1.5.4
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.20.0
@@ -14,7 +15,6 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/pkg/errors v0.9.1
-	github.com/polshe-v/microservices_common v0.0.0-20240614134025-0c890c19055d
 	github.com/prometheus/client_golang v1.19.1
 	github.com/rakyll/statik v0.1.7
 	github.com/rs/cors v1.11.0
