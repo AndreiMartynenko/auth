@@ -1,29 +1,18 @@
 package tests
 
 import (
+	"context"
 	"fmt"
-	accessAPI "github.com/AndreiMartynenko/auth/internal/api/access"
+	"testing"
+
 	"github.com/gojuno/minimock/v3"
 	"github.com/golang/protobuf/ptypes/empty"
 	"github.com/stretchr/testify/require"
-	"testing"
-)
 
-package tests
-
-import (
-"context"
-"fmt"
-"testing"
-
-"github.com/gojuno/minimock/v3"
-"github.com/golang/protobuf/ptypes/empty"
-"github.com/stretchr/testify/require"
-
-accessAPI "github.com/AndreiMartynenko/auth/internal/api/access"
-"github.com/AndreiMartynenko/auth/internal/service"
-serviceMocks "github.com/AndreiMartynenko/auth/internal/service/mocks"
-desc "github.com/AndreiMartynenko/auth/pkg/access_v1"
+	accessAPI "github.com/AndreiMartynenko/auth/internal/api/access"
+	"github.com/AndreiMartynenko/auth/internal/service"
+	serviceMocks "github.com/AndreiMartynenko/auth/internal/service/mocks"
+	desc "github.com/AndreiMartynenko/auth/pkg/access_v1"
 )
 
 func TestCheck(t *testing.T) {
